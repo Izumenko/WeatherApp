@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>WeatherApp</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="styles/style.css">
+</head>
+<body>
+
+	<h1>Weather:</h1>
+	<p id="country"></p>
+	<p id="region"></p>
+	<p id="city"></p>
+	<div id="icon-container"></div>
+	<div>
+		<a href="" id="celsius-btn">C&#176;</a>
+		<a href="" id="fahrenheit-btn">F&#176;</a>
+		<h2 id="temperature"></h2>
+	</div>
+	<h1 id="gogo"></h1>
+	<div class="days-container">
+		<div id="day-1" class="day"></div>
+		<div id="day-2" class="day"></div>
+		<div id="day-3" class="day"></div>
+		<div id="day-4" class="day"></div>
+		<div id="day-5" class="day"></div>
+	</div>
+	
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script type="text/javascript" src="scripts/main.js"></script>
+<script>weatherApp.init();</script>
+</body>
+</html>
