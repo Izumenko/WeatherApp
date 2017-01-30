@@ -31,7 +31,7 @@ var weatherApp = {
 		var _that = this;
 		
 		$.getJSON('https://ipapi.co/json/', function(data) {
-			console.log(data);
+			
 			_that.country.innerHTML = data.country;
 			_that.region.innerHTML  = data.region;
 			_that.city.innerHTML    = data.city;
@@ -41,23 +41,10 @@ var weatherApp = {
 		});
 	},
 
-	// getCurrentLocation: function () {
-	// 	var _that = this;
-		
-	// 	$.getJSON('http://ip-api.com/json', function(data) {
-	// 		_that.country.innerHTML = data.country;
-	// 		_that.region.innerHTML  = data.regionName;
-	// 		_that.city.innerHTML    = data.city;
-	
-	// 		_that.getWeatherForLocation(data.city, data.country);
-	// 		_that.getWeatherForFiveDays(data.city, data.country);
-	// 	});
-	// },
-
 	getWeatherForLocation: function (city, country) {
 		var _that = this;
 
-		var api      = "http://api.openweathermap.org/data/2.5/weather?q=",
+		var api      = "https://api.openweathermap.org/data/2.5/weather?q=",
 			units    = "&units=metric",
 			appidKey = "&APPID=8b4b5da3128ffe30288c82ffab1a6d55";
 
