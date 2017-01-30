@@ -30,15 +30,29 @@ var weatherApp = {
 	getCurrentLocation: function () {
 		var _that = this;
 		
-		$.getJSON('http://ip-api.com/json', function(data) {
+		$.getJSON('https://ipapi.co/json/', function(data) {
+			console.log(data);
 			_that.country.innerHTML = data.country;
-			_that.region.innerHTML  = data.regionName;
+			_that.region.innerHTML  = data.region;
 			_that.city.innerHTML    = data.city;
 	
 			_that.getWeatherForLocation(data.city, data.country);
 			_that.getWeatherForFiveDays(data.city, data.country);
 		});
 	},
+
+	// getCurrentLocation: function () {
+	// 	var _that = this;
+		
+	// 	$.getJSON('http://ip-api.com/json', function(data) {
+	// 		_that.country.innerHTML = data.country;
+	// 		_that.region.innerHTML  = data.regionName;
+	// 		_that.city.innerHTML    = data.city;
+	
+	// 		_that.getWeatherForLocation(data.city, data.country);
+	// 		_that.getWeatherForFiveDays(data.city, data.country);
+	// 	});
+	// },
 
 	getWeatherForLocation: function (city, country) {
 		var _that = this;
@@ -59,7 +73,7 @@ var weatherApp = {
 	},
 
 	iconGenerator: function(iconCode) {
-		var icon = 'http://openweathermap.org/img/w/' + iconCode + '.png'
+		var icon = 'https://openweathermap.org/img/w/' + iconCode + '.png'
 
 		this.iconContainer.innerHTML = '<img width="100px" height="100px" src=' + icon + '>';
 	},
