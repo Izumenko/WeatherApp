@@ -2,6 +2,7 @@ body, html {
 	background: black;
 	color: white;
 	text-align: center;
+	min-width: 850px;
 }
 
 a {
@@ -31,4 +32,8 @@ a {
 
 .day img {
 	vertical-align: middle;
+}
+
+.tempF {
+	display: none;
 }
