@@ -1,1 +1,1 @@
-<a target="_blank" href="http://izumenko.co.nf/weatherApp/"> WeatherApp  </a>
+<a href="http://izumenko.co.nf/weatherApp/" target="_blank"> WeatherApp  </a>
